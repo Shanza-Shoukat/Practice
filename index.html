@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Practice</title>
+</head>
+
+<body>
+    <button onclick="hello()">Click me</button>
+    <script>
+        //    var q = "hello world";
+        //    var p = "Shanza";
+        //       p = 12;
+        //    document.write(q);
+        //    document.write('<br>');
+        //    document.write(p);
+
+        //    var a = 12;
+        //    var b = 23;
+        //    var c = 76;
+
+        //    document.write(a*b-c);
+
+
+        //    let q = 74;
+        //    q = 34;
+        //    document.write(q);
+
+
+        // let a = `12`;
+        // let c = `Shanza is a good person ${a}`;
+        // let b = "shanza is struggling to learn javascript";
+
+        // document.write(a);
+        // document.write("<br>");
+        // document.write(typeof a);
+        // document.write("<br>");
+        // document.write(b);
+        // document.write("<br>");
+        // document.write(typeof(b));
+        // document.write("<br>");
+        // document.write(typeof c);
+        // document.write("<br>");
+        // document.write(c);
+
+
+        // Assignment operators
+
+        // let a = 12;
+        // let b = 15;
+        //   a /= b;
+        //  document.write(a);
+
+        // Google chrome console
+
+        // console.time("test"); 
+        // console.log("hello world");
+        // console.log('Hello shanza');
+        // console.log({
+        //     name: "Shanza Shoukat",
+        //     fName: "Shoukat Ali",
+        //     age : 23,
+        //     Role: "Full stack web developer"
+        // });
+
+        // console.log(["apple","Banana","lachi","peech","watermelon","melon"]);
+        // console.table(["apple","Banana","lachi","peech","watermelon","melon"]);
+
+        // console.error("Something went wrong");
+        // console.warn("This is just a warning");
+        // console.info("You are awesome");
+        // console.log("You are awesome");
+        // // console.clear();
+        // console.timeEnd("test");
+
+
+
+        // comparison operators
+
+        // let a = 18;
+        // let b = '14';
+
+        // console.log(a<b);
+
+
+        // IF STATMENTS
+        // let a = 22;
+        // let b = 18;
+        // if(a>b){
+        //     console.log("data types is equal");
+        // }
+
+
+        // logical operators
+
+        // let age = 23;
+
+        // if(age >=20 || age <=18){
+        //     console.log("You are eligible");
+        // }else{
+        //     console.log("you are not eligible");
+        // }
+
+
+        // If else statment 
+
+        // let a = 26;
+
+        // if(a%2==0){
+        //     console.log("a is equal to Even");
+        // }else{
+        //     console.log("a is equal to Odd");
+        // }
+
+        // Functiona
+
+        // function findTriangleType(type1, type2, type3){
+
+        //     if((type1==type2)&&(type2==type3)){
+        //         console.log("all types are equal");
+        //     }else if((type1==type2)||(type2==type3)||(type3==type1)){
+        //         console.log("all types may be are equal");
+        //     }else{
+        //         console.log("Either be are equal");
+        //     }
+        // }
+        // findTriangleType(12, 23, 56);
+        // findTriangleType(12, 56, 56);
+        // findTriangleType(12, 12, 12);
+
+        // TERNARY OPERATORS
+
+        // let a = 78;
+        // (a > 60)? console.log("value is true") : console.log("value is false");
+
+        // SWITCH Statement 
+
+        // let fruit = prompt('Please enter your favorite fruit');
+
+        // switch (fruit) {
+        //     case 'mango':
+        //         console.log(`The price of mango per kg is $100000`);
+        //         break;
+        //     case 'banana':
+        //         console.log(`The price of banana per kg is $900000`);
+        //         break;
+        //     case 'gava':
+        //         console.log(`The price of gava per kg is $400000`);
+        //         break;
+        //     case 'apple':
+        //         console.log(`The price of apple per kg is $200000`);
+        //         break;
+        //     case 'grapes':
+        //         console.log(`The price of grapes per kg is $2300000`);
+        //         break;
+        //     case 'watermelon':
+        //         console.log(`The price of watermelon per kg is $400000`);
+        //         break;
+        //     default:
+        //         console.log(`Sorry, for inconvience Please enter valid value`)
+        //         break;
+        // }
+
+        // FUNCTIONS IN JS 
+
+        // function sum(){
+        //     let a = 5;
+        //     let b = 6;
+        //     console.log(a+b);
+        // }
+        // sum();
+        // Functions with parameters 
+        // function hello(fName = "Shanza", sName = "Shoukat"){
+        //     // alert("Hello");
+        //   console.log("Hey! " + fName + " " + sName);
+        // }
+        // hello();
+
+        // // this is called arguments in below 
+        // hello('Sania', 'Shahzadi');
+        // hello('Salma', 'Shahzadi');
+        // hello('Taiba', 'Shahzadi');
+
+        // Another example of function 
+
+        // function mul(a, b){
+        //     console.log(a*b)
+        // }
+        // mul(15, 5)
+
+        // Functions with return value
+
+        // function fullName(fName, lName){
+        // let fullname = 'Hello ' + fName + " " +lName ;
+        // return fullname;
+        // }
+        // let fullname = fullName('Shanza', 'Shoukat');
+        // console.log(fullname);
+
+        // Another example of functions
+        //  function totalMarks(phy, math, comp, eng){
+        // let sum = phy+math+comp+eng;
+        // return sum;
+        //  }
+        //  function percentage(percen){
+        //     let per = percen/400*100;
+        //     // console.log(per);
+        //     return per;
+        //  }
+        //  let total = totalMarks(99,98,94,97);
+        //  console.log(total + " out of 400");
+
+        // //  percentage(total);
+        // let percent = percentage(total);
+        // console.log(percent);
+
+        // Anonymous functions
+        // const sayhello = function(){
+        //     return 'Hello';
+        // }
+        // sayhello();
+
+        // function addNum(a, b){
+        //  let add = a+b;
+        //  return add;
+        // }
+        // let add = addNum(25,26);
+        // console.log(add);
+
+
+        // error 
+        // function hello(para1="shanza", para2="shoukat"){
+        // alert(`hello ${para1} ${para2}`);
+        // }
+        // hello(sania,shehzadi);
+
+        // function radius(){
+
+
+        //     function sqaure(){
+
+        //     }
+        // }
+
+
+
+        function addAndMultiply(x, y, z) {
+
+            function add(a, b) {
+                return a + b;
+            }
+            function multiply(c, d) {
+                return c * d;
+            }
+
+            let sum = add(x, y);
+            let result = multiply(sum,  z);
+
+            return result;
+
+        }
+        let finalResult = addAndMultiply(5, 4, 9);
+        console.log(finalResult);
+
+
+//         function addAndMultiply(x, y, z) {
+//     function add(a, b) {
+//         return a + b;
+//     }
+
+//     function multiply(c, d) {
+//         return c * d;
+//     }
+
+//     let sum = add(x, y);
+//     let result = multiply(sum, z);
+
+//     return result;
+// }
+
+// let finalResult = addAndMultiply(3, 4, 5);
+// console.log(finalResult); 
+
+
+// function factorial(n){
+//     function innerFactorial(x){
+//         if(x <= 1){
+//            return 1;
+//         }else{
+//             return x*innerFactorial(x-1);
+//         }
+//     }
+//     return innerFactorial(n)
+// }
+// console.log(factorial(4));
+
+function hello(){
+    alert("Hi! there");
+}
+console.log();
+console.log();
+    </script>
+</body>
+
+</html>
